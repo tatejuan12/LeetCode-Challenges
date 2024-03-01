@@ -19,7 +19,7 @@ The first occurrence is at index 0, so we return 0.
 **Output:** -1  
 **Explanation:** "leeto" did not occur in "leetcode", so we return -1.
 
-##Constaints
+## Constraints
 
 - `1 <= haystack.length, needle.length <= 10^4`
 - `haystack` and `needle` consist of only lowercase English letters
