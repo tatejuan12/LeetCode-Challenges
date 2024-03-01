@@ -5,10 +5,15 @@ import java.util.ArrayList;
 public class App {
     public static void main(String[] args) throws Exception {
         Solution solution = new Solution();
-        System.out.println(solution.strStr("sadbutsad", "sad"));
-        System.out.println(solution.strStr("leetcode", "leeto"));
-        System.out.println(solution.strStr("leetcode", "coder"));
-        System.out.println(solution.strStr("mississippi", "issi"));
+        SolutionOptimised solutionOptimised = new SolutionOptimised();
+        // System.out.println(solution.strStr("sadbutsad", "sad"));
+        // System.out.println(solution.strStr("leetcode", "leeto"));
+        // System.out.println(solution.strStr("leetcode", "coder"));
+        // System.out.println(solution.strStr("mississippi", "issi"));
+        System.out.println(solutionOptimised.strStr("sadbutsad", "sad"));
+        System.out.println(solutionOptimised.strStr("leetcode", "leeto"));
+        System.out.println(solutionOptimised.strStr("leetcode", "coder"));
+        System.out.println(solutionOptimised.strStr("mississippi", "issi"));
 
     }
 
@@ -26,6 +31,13 @@ public class App {
             }
             return -1;
 
+        }
+    }
+
+    public static class SolutionOptimised {
+        public int strStr(String haystack, String needle) {
+            int index = haystack.indexOf(needle);
+            return index != -1 ? index : -1;
         }
     }
 }
